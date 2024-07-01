@@ -1,0 +1,95 @@
+:root {
+    --dark-border: rgb(34, 160, 141);
+    --darkBg: rgb(30, 26, 42);
+}
+
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    background-color: rgb(30, 26, 42);
+    color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 2px double rgb(34, 160, 141);
+}
+
+nav a {
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section {
+  margin: 30px;
+  padding: 30px;
+  border: 2px double var(--dark-border);
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 45px;
+  color: aquamarine;
+  text-shadow: 1px 1px blue;
+}
+
+h2 {
+  text-align: center;
+  order: 1;
+}
+
+form {
+    order: 2;
+}
+
+input {
+  width: -webkit-fill-available;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+
+#sub{
+    color: var(--darkBg);
+    background-color: rgb(102, 102, 163);
+}
+
+#content {
+  height: auto;
+  background-color: rgb(102, 102, 163);
+  padding: 20px 10px;
+  line-height: 40px;
+}
+
+#username {
+    background-color: rgb(102, 102, 163);
+}
+#title {
+    background-color: rgb(102, 102, 163);
+}
+
+#blog-post {
+  order: 2;
+  width: 50%;
+}
+
+#icon {
+  order: 1;
+  width: 50%;
+}
+
+aside {
+    background-image: url(../images/sunflower.jpg);
+    background-size: cover;
+    clip-path: circle(30%);
+    background-position: -10px -20px;
+    height: 100%;
+}
