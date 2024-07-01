@@ -1,0 +1,21 @@
+:root {
+    --dark-border: rgb(34, 160, 141);
+    --darkBg: rgb(30, 26, 42);
+}
+
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    background-color: rgb(30, 26, 42);
+    color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 2px double rgb(34, 160, 141);
+}
+
+nav a {
+  font-size: 24px;
+  padding-right: 20px;
+}
