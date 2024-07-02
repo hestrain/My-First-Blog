@@ -74,6 +74,16 @@ input {
   border-radius: 7px;
   resize: vertical;
 }
+textarea {
+  width: -webkit-fill-available;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  background-color: rgb(54, 45, 45);
+  color: rgb(185, 255, 255);
+  border-radius: 7px;
+  resize: vertical;
+}
 
 #submit{
     cursor: pointer;
