@@ -1,18 +1,26 @@
 :root {
-    --dark-border: rgb(34, 160, 141);
-    --darkBg: rgb(30, 26, 42);
+  --darkBg: rgb(30, 26, 42);
+}
+
+.dark {
+background-color: var(--darkBg);
+color: rgb(185, 255, 255);
+}
+
+.light {
+background-color: rgb(223, 192, 179);
+color: rgb(21, 19, 42);
 }
 
 * {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    background-color: rgb(30, 26, 42);
-    color: whitesmoke;
+  box-sizing:content-box;
 }
 
 nav {
   display: flex;
   flex-direction: row-reverse;
-  border: 2px double rgb(34, 160, 141);
+  border: 2px double;
 }
 
 nav a {
@@ -29,9 +37,10 @@ main {
 section {
   margin: 30px;
   padding: 30px;
-  border: 2px double var(--dark-border);
+  border: 2px double;
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
 
 h1 {
@@ -40,56 +49,65 @@ h1 {
   font-size: 45px;
   color: aquamarine;
   text-shadow: 1px 1px blue;
+  padding: 140px;
 }
 
 h2 {
   text-align: center;
   order: 1;
+  font-size: 50px;
 }
 
 form {
     order: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
 }
 
 input {
   width: -webkit-fill-available;
-  margin-bottom: 20px;
-  background-color: aliceblue;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  background-color: rgb(54, 45, 45);
+  color: rgb(185, 255, 255);
+  border-radius: 7px;
+  resize: vertical;
 }
 
-#sub{
-    color: var(--darkBg);
-    background-color: rgb(102, 102, 163);
+#submit{
+    cursor: pointer;
 }
 
 #content {
-  height: auto;
-  background-color: rgb(102, 102, 163);
-  padding: 20px 10px;
-  line-height: 40px;
+  min-height: 250px;
+  resize: vertical;
 }
 
 #username {
-    background-color: rgb(102, 102, 163);
+    /* background-color: rgb(102, 102, 163); */
 }
 #title {
-    background-color: rgb(102, 102, 163);
+
 }
 
 #blog-post {
   order: 2;
-  width: 50%;
-}
-
-#icon {
-  order: 1;
-  width: 50%;
 }
 
 aside {
     background-image: url(../images/sunflower.jpg);
-    background-size: cover;
+    background-size:cover;
     clip-path: circle(30%);
     background-position: -10px -20px;
-    height: 100%;
+    padding: 0px;
+}
+
+#icon {
+  order: 1;
+}
+
+footer {
+  text-align: center;
+  bottom: 0px;
 }

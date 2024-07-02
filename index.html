@@ -7,14 +7,15 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/form.css" />
   </head>
-  <body>
+  <body class="container dark">
+    <div>
     <nav>
-      <a>🌞</a>
+      <button id="switch">🌞</button>
     </nav>
     <main>
       <section id="blog-post">
         <h2>Whats on Your Mind?</h2>
-        <form action="assets/js/form.js">
+        <form>
           <!-- username -->
           <label for="username">Username</label><br />
           <input type="text" id="username" name="username" /><br />
@@ -26,7 +27,7 @@
           <label for="content">Content</label><br />
           <input type="text" id="content" name="content" /><br /><br />
 
-          <input type="submit" value="Submit" id="sub"/>
+          <input type="submit" value="Submit" id="submit"/>
         </form>
       </section>
       <section id="icon">
@@ -35,6 +36,8 @@
         </aside>
       </section>
     </main>
+    <footer>footer</footer>
+  </div>
     <script src="assets/js/form.js"></script>
   </body>
 </html>
