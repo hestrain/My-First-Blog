@@ -5,7 +5,6 @@ const titleInput =document.querySelector('#title');
 const contentInput =document.querySelector('#content');
 const submitEl = document.querySelector('#submit');
 
-
 let mode = 'dark';
 
 console.log(switcher);
@@ -21,6 +20,7 @@ switcher.addEventListener('click', function () {
       contentInput.setAttribute('style', 'background-color: white; color: black;');
       titleInput.setAttribute('style', 'background-color: white; color: black;');
       submitEl.setAttribute('style', 'background-color: white; color: black;');
+      switcher.setAttribute('style', 'background-color: #F8CA97');
     }
     // If mode is light, apply dark background
     else if (mode==='light'){
@@ -31,6 +31,7 @@ switcher.addEventListener('click', function () {
       contentInput.setAttribute('style', 'background-color: rgb(54, 45, 45); color: rgb(185, 255, 255);');
       titleInput.setAttribute('style', 'background-color: rgb(54, 45, 45); color: rgb(185, 255, 255);');
       submitEl.setAttribute('style', 'background-color: rgb(54, 45, 45); color: rgb(185, 255, 255);');
+      switcher.setAttribute('style', 'background-color:  rgb(53, 59, 133)');
     }
   });
 
