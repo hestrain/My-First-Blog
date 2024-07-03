@@ -23,8 +23,9 @@ function recordResponse(event) {
   event.preventDefault();
 
   //creates array with existing object or empty
-  const blogs = localStorage.getItem("blogPost") || [];
-
+  const lS = localStorage.getItem("blogPost") || [];
+  const blogs = JSON.parse(lS);
+  
   //creating the object
   const blogPost = {
     userName: userNameInput.value.trim(),

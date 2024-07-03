@@ -66,9 +66,3 @@ switcher.addEventListener("click", function () {
     }
   });
 
-
-
-//   const getLocalStorage = function () {
-//     const dataToStore = JSON.parse(llocalStorage.getItem("posts"));
-//     return dataToStore || [];
-//   }
