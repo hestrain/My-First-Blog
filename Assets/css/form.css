@@ -1,42 +1,9 @@
-:root {
-  --darkBg: rgb(30, 26, 42);
-}
-
-.dark {
-background-color: var(--darkBg);
-color: rgb(185, 255, 255);
-}
-
-.light {
-background-color: rgb(223, 192, 179);
-color: rgb(21, 19, 42);
-}
-
-* {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  box-sizing:content-box;
-}
 
 nav {
   display: flex;
   flex-direction: row-reverse;
   border: 2px double;
   padding: 5px 10px;
-}
-
-nav button {
-  font-size: 24px;
-  margin-right: 20px;
-  background-color: rgb(53, 59, 133);
-  border-radius: 5px;
-  padding: auto 10px;
-  height: fit-content;
-}
-
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 section {
