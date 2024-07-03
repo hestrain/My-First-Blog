@@ -18,94 +18,75 @@ color: rgb(21, 19, 42);
 }
 
 nav {
-  display: flex;
-  flex-direction: row-reverse;
-  border: 2px double;
-}
-
-nav a {
-  font-size: 24px;
-  padding-right: 20px;
-}
-
-main {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  border: 2px double;
+  padding: 5px 10px;
+  align-items: center;
 }
 
-section {
-  margin: 30px;
-  padding: 30px;
-  border: 2px double;
+nav #buttons {
+  font-size: 24px;
+  margin-right: 20px;
   display: flex;
-  flex-direction: column;
-  width: 50%;
+  flex-direction: row-reverse;
+  border-radius: 5px;
+  padding: auto 10px;
+}
+
+nav button {
+  font-size: 24px;
+  margin: auto 5px;
+  border-radius: 5px;
+  height: fit-content;
+  background-color: rgb(53, 59, 133);
+  color: aliceblue;
 }
 
 h1 {
   text-align: center;
   align-items: center;
-  font-size: 45px;
+  font-size: 25px;
   color: aquamarine;
   text-shadow: 1px 1px blue;
-  padding: 140px;
+  padding-left: 15px;
 }
 
-h2 {
-  text-align: center;
-  order: 1;
-  font-size: 50px;
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
 }
 
-form {
-    order: 2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
+section {
+  margin: 10px;
+  padding: 10px;
+  border: 2px double;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
 }
 
-input {
-  width: -webkit-fill-available;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-bottom: 15px;
-  background-color: rgb(54, 45, 45);
-  color: rgb(185, 255, 255);
-  border-radius: 7px;
-  resize: vertical;
+section h4 {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  border-bottom: 2px solid;
 }
 
-#submit{
-    cursor: pointer;
+section p{
+  font-size: 12px;
+  font-style: italic;
+  margin: 20px 15px;
 }
 
-#content {
-  min-height: 250px;
-  resize: vertical;
+section h5 {
+  font-size: 13px;
 }
 
-#username {
-    /* background-color: rgb(102, 102, 163); */
-}
-#title {
-
-}
-
-#blog-post {
-  order: 2;
-}
-
-aside {
-    background-image: url(../images/sunflower.jpg);
-    background-size:cover;
-    clip-path: circle(30%);
-    background-position: -10px -20px;
-    padding: 0px;
-}
-
-#icon {
-  order: 1;
-}
 
 footer {
   text-align: center;

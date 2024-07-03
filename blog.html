@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Blog</title>
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/blog.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/blog.css" />
+  </head>
+  <body class="container dark">
+    <div>
     <nav>
-        <a>🌞</a>
-        <button onclick="window.location.href='/index.html'">
-            Back
-        </button>
-      </nav>
-
+        <h1>My First Blog</h1>
+        <div id="buttons">
+      <button id="switch">🌞</button>
+      <button id="back" onclick="window.location.href='index.html'">⇦ Back</button>
+    </div>
+    </nav>
+    <main>
+      <section id="blog-post">
+        <article>
+            <h4>title eventually</h4>
+            <p>content eventually</p>
+            <h5>posted by: eventually</h5>
+        </article>
+      </section>
+    </main>
+    <footer>footer</footer>
+  </div>
     <script src="assets/js/blog.js"></script>
-</body>
+  </body>
 </html>
