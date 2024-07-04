@@ -42,7 +42,7 @@ function recordResponse(event) {
     window.alert("Content cannot be blank");
   } else if (window.confirm("success")){
 
-    window.location.href = "/blog.html";
+    window.location.href = "./blog.html";
 
 
     //logging to the console to double check
