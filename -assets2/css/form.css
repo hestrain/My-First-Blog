@@ -1,0 +1,117 @@
+
+nav {
+  display: flex;
+  flex-direction: row-reverse;
+  border: 2px double;
+  padding: 5px 10px;
+}
+
+main {
+  height: 100%;
+}
+
+
+h1 {
+  text-align: center;
+  align-items: center;
+  font-size: 45px;
+  color: aquamarine;
+  text-shadow: 1px 1px blue;
+  height: max-content;
+  width: max-content;
+}
+
+h2 {
+  text-align: center;
+  order: 1;
+  font-size: 50px;
+}
+
+form {
+    order: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+input {
+  width: -webkit-fill-available;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  background-color: rgb(54, 45, 45);
+  color: rgb(185, 255, 255);
+  border-radius: 7px;
+  resize: vertical;
+}
+textarea {
+  width: -webkit-fill-available;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  background-color: rgb(54, 45, 45);
+  color: rgb(185, 255, 255);
+  border-radius: 7px;
+  resize: vertical;
+}
+
+#submit{
+    cursor: pointer;
+}
+
+#content {
+  min-height: 250px;
+}
+
+#blog-post {
+  order: 2;
+  margin: 30px;
+  padding: 30px;
+  border: 2px double;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#icon {
+  order: 1;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  background-image: url(../images/sunflower.jpg);
+  background-size:cover;
+  clip-path: circle(42%);
+  background-repeat:repeat-y;
+  background-position: -10px -20px;
+  padding: 0px;
+  flex-direction: column;
+  width: 50%;
+  min-height: 500px;
+  justify-content: center;
+}
+
+
+footer {
+  text-align: center;
+  bottom: 0px;
+}
+
+/* ======= media screensize alteration ==========*/
+@media screen and (max-width: 768px) {
+  main,
+  nav, footer, .links, .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .icon {
+    display: flex;
+    clip-path: circle(30%);
+    min-height: 300px;
+  }
+
+  .icon h1 {
+    display: flex;
+    text-align: center;
+    left: 10px;
+  }
+}

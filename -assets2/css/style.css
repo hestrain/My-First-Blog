@@ -1,0 +1,84 @@
+:root {
+    --darkBg: rgb(30, 26, 42);
+  }
+  
+  .dark {
+  background-color: var(--darkBg);
+  color: rgb(185, 255, 255);
+  }
+  
+  .light {
+  background-color: rgb(223, 192, 179);
+  color: rgb(21, 19, 42);
+  }
+  
+  * {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    box-sizing:content-box;
+  }
+  
+  nav {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px double;
+    padding: 5px 10px;
+    align-items: center;
+  }
+  
+  nav #buttons {
+    font-size: 24px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    border-radius: 5px;
+    padding: auto 10px;
+  }
+  
+  nav button {
+    font-size: 24px;
+    margin: auto 5px;
+    border-radius: 5px;
+    height: fit-content;
+    background-color: rgb(53, 59, 133);
+    color: aliceblue;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+  }
+
+
+
+footer {
+    text-align: center;
+    bottom: 0px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+  }
+
+  footer #links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: inherit;
+    margin-left: 20px;
+  }
+
+  #links p {
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
