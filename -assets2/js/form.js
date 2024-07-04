@@ -40,8 +40,10 @@ function recordResponse(event) {
     window.alert("Title cannot be blank");
   } else if (blogPost.content === "") {
     window.alert("Content cannot be blank");
-  } else {
-    window.alert("success", "Registered successfully");
+  } else if (window.confirm("success")){
+
+    window.location.href = "/blog.html";
+
 
     //logging to the console to double check
     console.log(`
@@ -54,5 +56,8 @@ function recordResponse(event) {
    
     //triggering storing the object to localStorage
     localStorage.setItem("blogPost", JSON.stringify(blogs));
+  }
+  else {
+    return;
   }
 }
