@@ -1,5 +1,7 @@
 
+/* this stylesheet is for things that only apply to the blog page */
 
+/* left hand side blog title */
 h1 {
   text-align: center;
   align-items: center;
@@ -9,6 +11,7 @@ h1 {
   padding-left: 15px;
 }
 
+/* the section is what the blog posts go into */
 section {
   margin: 10px;
   padding: 10px;
@@ -19,6 +22,7 @@ section {
   width: 90%;
 }
 
+/* the article is each individual blog post */
 article {
   margin: 10px;
   padding: 10px;
@@ -29,6 +33,7 @@ article {
   width: 90%;
 }
 
+/* title of blog post */
 section h4 {
   font-size: 14px;
   font-weight: bolder;
@@ -36,12 +41,14 @@ section h4 {
   border-bottom: 2px solid;
 }
 
+/* content of blog post */
 section p{
   font-size: 12px;
   font-style: italic;
   margin: 20px 15px;
 }
 
+/* username for blog post */
 section h5 {
   font-size: 13px;
   margin-top: 25px;

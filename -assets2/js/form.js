@@ -19,7 +19,7 @@ submitEl.addEventListener("click", recordResponse);
 
 //function to record the form response as an object, and then into local storage
 function recordResponse(event) {
-  //prevents default action upon submission(refresing the page)
+  //prevents default action upon submission(refreshing the page)
   event.preventDefault();
 
   //creates array with existing object or empty
@@ -33,7 +33,7 @@ function recordResponse(event) {
     content: contentInput.value.trim(),
   };
 
-  //chekcing for blank values!
+  //checking for blank values!
   if (blogPost.userName === "") {
     window.alert("Username cannot be blank");
   } else if (blogPost.title === "") {

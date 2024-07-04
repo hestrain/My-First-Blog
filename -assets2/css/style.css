@@ -1,22 +1,28 @@
+/* styles that apply to both pages */
+
 :root {
     --darkBg: rgb(30, 26, 42);
   }
   
+  /* dark theme colors */
   .dark {
   background-color: var(--darkBg);
   color: rgb(185, 255, 255);
   }
   
+  /* light theme colors */
   .light {
   background-color: rgb(223, 192, 179);
   color: rgb(21, 19, 42);
   }
   
+  /* universal styling */
   * {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
     box-sizing:content-box;
   }
   
+  /* for the nav bar section for things that are the same across the 2 pages. */
   nav {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: flex;
@@ -45,15 +51,15 @@
     color: aliceblue;
   }
 
+  /* bit below nav bar and before footer */
   main {
     display: flex;
     flex-direction: row;
     justify-content: center;
     text-decoration: none;
   }
-
-
-
+/* 
+  footer and links */
 footer {
     text-align: center;
     bottom: 0px;

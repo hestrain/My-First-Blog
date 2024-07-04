@@ -1,4 +1,6 @@
+/* styles that only apply to the main page where the blog form is. */
 
+/* navbar */
 nav {
   display: flex;
   flex-direction: row-reverse;
@@ -6,11 +8,12 @@ nav {
   padding: 5px 10px;
 }
 
+/* the container that holds both the circle picture and the form */
 main {
   height: 100%;
 }
 
-
+/* title in the circle */
 h1 {
   text-align: center;
   align-items: center;
@@ -21,47 +24,7 @@ h1 {
   width: max-content;
 }
 
-h2 {
-  text-align: center;
-  order: 1;
-  font-size: 50px;
-}
-
-form {
-    order: 2;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    box-sizing: border-box;
-}
-
-input {
-  width: -webkit-fill-available;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-bottom: 15px;
-  background-color: rgb(54, 45, 45);
-  color: rgb(185, 255, 255);
-  border-radius: 7px;
-  resize: vertical;
-}
-textarea {
-  width: -webkit-fill-available;
-  box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  margin-bottom: 15px;
-  background-color: rgb(54, 45, 45);
-  color: rgb(185, 255, 255);
-  border-radius: 7px;
-  resize: vertical;
-}
-
-#submit{
-    cursor: pointer;
-}
-
-#content {
-  min-height: 250px;
-}
-
+/* container for whole form section */
 #blog-post {
   order: 2;
   margin: 30px;
@@ -72,6 +35,51 @@ textarea {
   width: 50%;
 }
 
+/* title for the form */
+h2 {
+  text-align: center;
+  order: 1;
+  font-size: 50px;
+}
+
+/* applies to the whole form */
+form {
+    order: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+/* applies only to inputs */
+input {
+  width: -webkit-fill-available;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  background-color: rgb(54, 45, 45);
+  color: rgb(185, 255, 255);
+  border-radius: 7px;
+  resize: vertical;
+}
+
+/* for the content input */
+textarea {
+  width: -webkit-fill-available;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-bottom: 15px;
+  background-color: rgb(54, 45, 45);
+  color: rgb(185, 255, 255);
+  border-radius: 7px;
+  resize: vertical;
+  min-height: 250px;
+}
+
+/* submit button */
+#submit{
+    cursor: pointer;
+}
+
+/* container for the circle picture and title */
 #icon {
   order: 1;
   align-self: center;
@@ -89,7 +97,7 @@ textarea {
   justify-content: center;
 }
 
-
+/* for links etc.  */
 footer {
   text-align: center;
   bottom: 0px;
@@ -98,7 +106,7 @@ footer {
 /* ======= media screensize alteration ==========*/
 @media screen and (max-width: 768px) {
   main,
-  nav, footer, .links, .hero {
+  nav, footer, .links {
     flex-direction: column;
     align-items: center;
   }

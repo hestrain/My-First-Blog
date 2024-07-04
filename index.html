@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Heather's Blog - Post</title>
+    <!-- all of my stylesheets -->
     <link rel="stylesheet" href="-assets2/css/reset.css" media="screen"/>
     <link rel="stylesheet" href="-assets2/css/style.css" media="screen"/>
     <link rel="stylesheet" href="-assets2/css/form.css" media="screen"/>
   </head>
+  <!-- where the dark/light theme information is kept -->
   <body class="container dark">
     <div>
     <nav>
+      <!-- the switch for the themes -->
       <button id="switch">🌞</button>
     </nav>
     <main>
+      <!-- section for making the blog post -->
       <section id="blog-post">
         <h2>Whats on Your Mind?</h2>
         <form>
@@ -27,11 +31,12 @@
           <!-- content -->
           <label for="content">Content</label><br />
           <textarea type="text" id="content" name="content" ></textarea><br /><br />
-
+          <!-- submit button -->
           <input type="submit" value="Submit" id="submit" />
-          <!-- to add back to submit button later onclick="window.location.href='blog.html'" -->
+          
         </form>
       </section>
+      <!-- the section for the image in the circle -->
       <section id="icon">
         <aside>
           <h1>Heather's Blog</h1>
@@ -48,6 +53,7 @@
     </div>
     </footer>
   </div>
+  <!-- javascript files -->
   <script src="-assets2/js/logic.js"></script>
     <script src="-assets2/js/form.js"></script>
   </body>
