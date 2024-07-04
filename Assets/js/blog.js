@@ -17,9 +17,12 @@ function blogPosts() {
     const newUser = document.createElement("h5");
     const newContent = document.createElement("p");
 
+    console.log(newPost);
+
+
     newTitle.textContent = blog.title;
     newContent.textContent = blog.content;
-    newUser.textContent = blog.userName;
+    newUser.textContent = "Posted by: " + blog.userName;
 
     blogSection.appendChild(newPost);
     newPost.appendChild(newTitle);

@@ -49,10 +49,36 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    text-decoration: none;
   }
+
 
 
 footer {
     text-align: center;
     bottom: 0px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 10px;
+  }
+
+  footer #links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: inherit;
+    margin-left: 20px;
+  }
+
+  #links p {
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 12px;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: inherit;
   }
