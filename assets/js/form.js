@@ -4,11 +4,6 @@ const submitEl = document.querySelector("#submit");
 //log to console to make sure im looking at the right elements
 console.log(page);
 
-//checks to see if there is anything in localStorage for a blog post yet.
-let blogPost = localStorage.getItem("blogPost");
-
-
-
 //event listener to trigger when the submit button is pressed at the end of the form.
 submitEl.addEventListener("click", recordResponse);
 
@@ -17,33 +12,29 @@ submitEl.addEventListener("click", recordResponse);
 //   window.alert("Please enter a username, title, AND blog post on the form");
 // } else {
 
+let blogs = JSON.parse(localStorage.getItem("blogPost")) || [];
+
+console.log(blogs);
+
 //function to record the form response as an object, and then into local storage
 function recordResponse(event) {
   //prevents default action upon submission(refreshing the page)
   event.preventDefault();
-
-  //creates array with existing object or empty
-  const lS = localStorage.getItem("blogPost") || [];
-  const blogs = JSON.parse(lS);
   
-  //creating the object
-  const blogPost = {
-    userName: userNameInput.value.trim(),
-    title: titleInput.value.trim(),
-    content: contentInput.value.trim(),
-  };
-
   //checking for blank values!
-  if (blogPost.userName === "") {
+  if (userNameInput.value === "") {
     window.alert("Username cannot be blank");
-  } else if (blogPost.title === "") {
+  } else if (titleInput.value=== "") {
     window.alert("Title cannot be blank");
-  } else if (blogPost.content === "") {
+  } else if (contentInput.value === "") {
     window.alert("Content cannot be blank");
-  } else if (window.confirm("success")){
-
-    window.location.href = "./blog.html";
-
+  } else {
+    //adds newest blogpost to blogs array
+    let blogPost = {
+      userName: userNameInput.value.trim(),
+      title: titleInput.value.trim(),
+      content: contentInput.value.trim(),
+    };
 
     //logging to the console to double check
     console.log(`
@@ -51,13 +42,15 @@ function recordResponse(event) {
     Title: ${blogPost.title}
     Content: ${blogPost.content}`);
 
-    //adds newest blogpost to blogs array
-    blogs.push(blogPost);
-   
-    //triggering storing the object to localStorage
-    localStorage.setItem("blogPost", JSON.stringify(blogs));
+    console.log(blogPost);
+
+    //add to array
+      blogs.push(blogPost);
+      //set array to localstorage
+      localStorage.setItem("blogPost", JSON.stringify(blogs))
+      
+      // change window
+      window.location.href = "./blog.html";
+    }
+    
   }
-  else {
-    return;
-  }
-}

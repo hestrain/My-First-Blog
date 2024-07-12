@@ -6,8 +6,6 @@ let blogs = JSON.parse(localStorage.getItem("blogPost"));
 
 console.log(blogs);
 
-//triggeres function to make blog posts
-blogPosts();
 
 //function for mkae a post
 function blogPosts() {
@@ -30,3 +28,6 @@ function blogPosts() {
     newPost.appendChild(newUser);
   });
 }
+
+//triggeres function to make blog posts
+blogPosts();
