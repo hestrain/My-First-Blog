@@ -5,12 +5,11 @@ This is the challenge for Module 4 of the bootcamp, Web APIs. The challenge was 
 
 Below are screenshots to see the final product: 
 
-![form page in dark theme](./-assets2/images/form%20page.png)
+![form page](https://github.com/user-attachments/assets/fdb8a341-7987-4f4c-9e35-0ca537f36f56)
 
-![blog page in dark theme](./-assets2/images/blog%20page.png)
+![light mode](https://github.com/user-attachments/assets/8fd2634d-588b-4fa2-993b-601dc729da6e)
 
-![form page in light theme](./-assets2/images/light%20mode.png)
-
+![blog page](https://github.com/user-attachments/assets/1cf96283-b140-426e-b52b-3d45ec80bb94)
 
 ## Installation
 
@@ -19,8 +18,8 @@ N/A
 ## Usage
 This webpage can be used to write & view blog posts that you write on your own computer (as it only uses localStorage at the moment). Many blog posts can be viewed at once after you have written them. 
 
-The live webpage can be found hosted on github at the following link: hestrain.github.io/My-First-Blog
-The code repository can be found on github at the following link: https://github.com/hestrain/My-First-Blog
+The live webpage can be found hosted on github at the following link: [live webpage](hestrain.github.io/My-First-Blog)
+The code repository can be found on github at the following link: [repository](https://github.com/hestrain/My-First-Blog)
 
 ## Credits
 
